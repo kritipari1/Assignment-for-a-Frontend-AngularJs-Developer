@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angularjs Assignment</title>
+    <link href="./bootstrap.css" rel="stylesheet">
+    <style>
+    
+    
+    </style>
+</head>
+<body ng-app="chartapp">
+
+   
+    
+    <div class="col-md-6"> 
+            <h2>Exchange rate of all crypto currencies in USD</h2>
+                <h3>We have taken name as X axis and price_usd as Y axis  </h3>
+                <h3>This chart will get update for every 5 mins</h3>
+                <h3>Libraries used: AngularJS, ChartJS</h3>
+                
+    </div>
+    <div ng-controller="ChartController" class="col-md-6">
+        <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" width="350px" height="250px"></canvas>
+    </div>
+
+<script src="angularjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
